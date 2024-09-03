@@ -1,0 +1,150 @@
+
+-Goal-
+Given a text document that is potentially relevant to this activity, first identify all entities needed from the text in order to capture the information and ideas in the text.
+Next, report all relationships among the identified entities.
+
+-Steps-
+1. Identify all entities. For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+- entity_type: Suggest several labels or categories for the entity. The categories should not be specific, but should be as general as possible.
+- entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_strength: a numeric score indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in The primary language of the provided text is "English." as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into The primary language of the provided text is "English.", just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
+-Examples-
+######################
+
+Example 1:
+
+text:
+ Guidelines
+Use the no switchport command to set the interface as a Layer 3 interface.
+
+An interface cannot be set as a Layer 3 interface if 802x.1 is enabled on the interface and one of the following conditions is true:
+
+The host mode differs from multi-host.
+
+MAC-Based or WEB-Based authentication is enabled.
+
+Radius VLAN assignment is enabled.
+
+Examples
+Example 1 - The following example puts the port gi1/0/1 into Layer 2 mode.
+
+switchxxxxxx(config)# interface gi1/0/1
+switchxxxxxx(config-if)# switchport
+Example 2 - The following example puts the port gi1/0/1 into Layer 3 mode.
+
+switchxxxxxx(config)# interface gi1/0/1
+switchxxxxxx(config-if)# no switchport
+switchport mode
+Use the switchport mode Interface Configuration mode command to configure the VLAN membership mode. Use the no form of this command to restore the default configuration.
+
+Syntax
+switch
+------------------------
+output:
+("entity"{tuple_delimiter}INTERFACE{tuple_delimiter}NETWORK COMPONENT{tuple_delimiter}An interface is a point of interaction for devices in a network, which can be configured for different modes such as Layer 2 or Layer 3.)
+{record_delimiter}
+("entity"{tuple_delimiter}LAYER 2{tuple_delimiter}NETWORK MODE{tuple_delimiter}Layer 2 is a network mode that allows for data link layer communication, typically involving MAC addresses and VLANs.)
+{record_delimiter}
+("entity"{tuple_delimiter}LAYER 3{tuple_delimiter}NETWORK MODE{tuple_delimiter}Layer 3 is a network mode that allows for network layer communication, typically involving IP addresses and routing.)
+{record_delimiter}
+("entity"{tuple_delimiter}SWITCHPORT{tuple_delimiter}CONFIGURATION COMMAND{tuple_delimiter}The switchport command is used to configure an interface to operate in Layer 2 mode, allowing for VLAN membership.)
+{record_delimiter}
+("entity"{tuple_delimiter}NO SWITCHPORT{tuple_delimiter}CONFIGURATION COMMAND{tuple_delimiter}The no switchport command is used to configure an interface to operate in Layer 3 mode, disabling Layer 2 functionalities.)
+{record_delimiter}
+("entity"{tuple_delimiter}VLAN{tuple_delimiter}NETWORK CONCEPT{tuple_delimiter}VLAN (Virtual Local Area Network) is a subnetwork that can group together a collection of devices from different physical LANs.)
+{record_delimiter}
+("entity"{tuple_delimiter}MAC-BASED AUTHENTICATION{tuple_delimiter}SECURITY MEASURE{tuple_delimiter}MAC-Based authentication is a security measure that restricts network access based on the MAC address of devices.)
+{record_delimiter}
+("entity"{tuple_delimiter}WEB-BASED AUTHENTICATION{tuple_delimiter}SECURITY MEASURE{tuple_delimiter}WEB-Based authentication is a security measure that requires users to authenticate through a web interface before accessing the network.)
+{record_delimiter}
+("entity"{tuple_delimiter}RADIUS VLAN ASSIGNMENT{tuple_delimiter}SECURITY MEASURE{tuple_delimiter}RADIUS VLAN assignment is a method of assigning VLANs to users based on their authentication status through RADIUS protocol.)
+{record_delimiter}
+("relationship"{tuple_delimiter}INTERFACE{tuple_delimiter}LAYER 2{tuple_delimiter}An interface can be configured to operate in Layer 2 mode using the switchport command{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}INTERFACE{tuple_delimiter}LAYER 3{tuple_delimiter}An interface can be configured to operate in Layer 3 mode using the no switchport command{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}SWITCHPORT{tuple_delimiter}INTERFACE{tuple_delimiter}The switchport command is used to set the interface to Layer 2 mode{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}NO SWITCHPORT{tuple_delimiter}INTERFACE{tuple_delimiter}The no switchport command is used to set the interface to Layer 3 mode{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}INTERFACE{tuple_delimiter}VLAN{tuple_delimiter}An interface can be configured to participate in a VLAN when in Layer 2 mode{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}MAC-BASED AUTHENTICATION{tuple_delimiter}INTERFACE{tuple_delimiter}MAC-Based authentication can prevent an interface from being set to Layer 3 mode{tuple_delimiter}5)
+{record_delimiter}
+("relationship"{tuple_delimiter}WEB-BASED AUTHENTICATION{tuple_delimiter}INTERFACE{tuple_delimiter}WEB-Based authentication can prevent an interface from being set to Layer 3 mode{tuple_delimiter}5)
+{record_delimiter}
+("relationship"{tuple_delimiter}RADIUS VLAN ASSIGNMENT{tuple_delimiter}INTERFACE{tuple_delimiter}RADIUS VLAN assignment can prevent an interface from being set to Layer 3 mode{tuple_delimiter}5)
+{completion_delimiter}
+#############################
+
+
+Example 2:
+
+text:
+Interface (Ethernet, Port Channel) Configuration mode
+
+Example
+The following example configures port gi1/0/3 to be in general mode and to discard untagged frames at ingress.
+
+switchxxxxxx(config)# interface gi1/0/3
+switchxxxxxx(config-if)# switchport mode general
+switchxxxxxx(config-if)# switchport general acceptable-frame-type tagged-only
+switchport general forbidden vlan
+Use the switchport general forbidden vlan Interface Configuration mode command to forbid adding/removing specific VLANs to/from a port. Use the no form of this command to restore the default configuration.
+
+Syntax
+switchport general forbidden vlan {add vlan-list | remove vlan-list}
+
+no switchport general forbidden vlan
+
+Parameters
+add vlan-list—Specifies a list of VLAN IDs to add to interface. Separate nonconsecutive VLAN IDs with a comma and no spaces. Use a hyphen to designate a range of IDs.
+
+remove vlan-list—Specifies a list of VLAN IDs to remove from interface.
+------------------------
+output:
+("entity"{tuple_delimiter}INTERFACE CONFIGURATION{tuple_delimiter}NETWORK CONFIGURATION{tuple_delimiter}Interface Configuration refers to the settings and commands used to configure network interfaces on a switch, including modes and VLAN settings.)
+{record_delimiter}
+("entity"{tuple_delimiter}PORT GI1/0/3{tuple_delimiter}NETWORK INTERFACE{tuple_delimiter}Port gi1/0/3 is a specific network interface on a switch that can be configured for various operational modes and VLAN settings.)
+{record_delimiter}
+("entity"{tuple_delimiter}SWITCHPORT MODE GENERAL{tuple_delimiter}CONFIGURATION COMMAND{tuple_delimiter}Switchport mode general is a command that configures a port to operate in general mode, allowing it to handle both tagged and untagged frames.)
+{record_delimiter}
+("entity"{tuple_delimiter}UNTAGGED FRAMES{tuple_delimiter}DATA TYPE{tuple_delimiter>Untagged frames are Ethernet frames that do not have a VLAN tag and are typically used in networks where VLANs are not implemented.)
+{record_delimiter}
+("entity"{tuple_delimiter}VLAN{tuple_delimiter}NETWORK CONCEPT{tuple_delimiter}VLAN (Virtual Local Area Network) is a logical grouping of devices on a network that allows for segmentation and management of traffic.)
+{record_delimiter}
+("entity"{tuple_delimiter}FORBIDDEN VLAN{tuple_delimiter}CONFIGURATION COMMAND{tuple_delimiter}The forbidden VLAN command is used to restrict specific VLANs from being added or removed from a port in a switch configuration.)
+{record_delimiter}
+("relationship"{tuple_delimiter}PORT GI1/0/3{tuple_delimiter}SWITCHPORT MODE GENERAL{tuple_delimiter}Port gi1/0/3 is configured to operate in switchport mode general, allowing it to handle both tagged and untagged frames{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}PORT GI1/0/3{tuple_delimiter}FORBIDDEN VLAN{tuple_delimiter}The forbidden VLAN command can be applied to port gi1/0/3 to restrict specific VLANs from being added or removed{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}SWITCHPORT MODE GENERAL{tuple_delimiter}UNTAGGED FRAMES{tuple_delimiter}Switchport mode general allows the port to handle untagged frames, which are frames without VLAN tags{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}VLAN{tuple_delimiter}FORBIDDEN VLAN{tuple_delimiter}The forbidden VLAN command is used to manage VLANs by restricting certain VLANs from being added to a port{tuple_delimiter}5)
+{completion_delimiter}
+#############################
+
+
+
+-Real Data-
+######################
+text: {input_text}
+######################
+output:

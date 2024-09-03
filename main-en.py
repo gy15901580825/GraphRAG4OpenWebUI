@@ -40,7 +40,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 
 # Set constants and configurations
-INPUT_DIR = os.getenv('INPUT_DIR')
+INPUT_DIR = "/home/test/Workspace/GitHub/vytech/ai/ui_demo/output/artifacts"
 LANCEDB_URI = f"{INPUT_DIR}/lancedb"
 COMMUNITY_REPORT_TABLE = "create_final_community_reports"
 ENTITY_TABLE = "create_final_nodes"
@@ -49,7 +49,7 @@ RELATIONSHIP_TABLE = "create_final_relationships"
 COVARIATE_TABLE = "create_final_covariates"
 TEXT_UNIT_TABLE = "create_final_text_units"
 COMMUNITY_LEVEL = 2
-PORT = 8012
+PORT = 8088
 
 # Global variables for storing search engines and question generator
 local_search_engine = None
@@ -113,8 +113,8 @@ async def setup_llm_and_embedder():
     api_base_embedding = os.environ.get("API_BASE_EMBEDDING", "https://api.openai.com/v1")
 
     # Get model names
-    llm_model = os.environ.get("GRAPHRAG_LLM_MODEL", "gpt-3.5-turbo-0125")
-    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-small")
+    llm_model = os.environ.get("GRAPHRAG_LLM_MODEL", "gpt-4o-mini")
+    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-large")
 
     # Check if API key exists
     if api_key == "YOUR_API_KEY":

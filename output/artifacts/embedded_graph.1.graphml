@@ -1,0 +1,712 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="description" attr.type="string" />
+  <key id="d4" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d3" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="VLAN DATABASE">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">The VLAN Database command is used to enter VLAN Configuration mode to create VLANs and define the default VLAN.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="GLOBAL CONFIGURATION MODE">
+      <data key="d0">MODE</data>
+      <data key="d1">Global Configuration mode is a command mode utilized for configuring global settings on a device. Within this mode, users can execute various commands, including the vlan prohibit-internal-usage command, which is specifically used to configure VLAN settings. This mode serves as a central point for managing and adjusting the overall configuration of the device.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7,ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The VLAN command is used to create a VLAN and assign it a name, or to delete VLANs.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="SHOW VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The show vlan command displays VLAN information including names, tagged ports, and created by details.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="INTERFACE VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The interface vlan command is used to enter Interface Configuration mode for a specific VLAN to configure it.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="INTERFACE RANGE VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The interface range vlan command allows configuration of multiple VLANs simultaneously.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="NAME">
+      <data key="d0">CLI</data>
+      <data key="d1">The name command is used to assign a unique name to a VLAN in Interface Configuration mode.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="SWITCHPORT">
+      <data key="d0">CLI</data>
+      <data key="d1">SWITCHPORT refers to a command utilized in networking to modify an interface's operational mode. Specifically, the switchport command is employed to transition an interface from Layer 3 mode, which is typically used for routing, to Layer 2 mode, which is essential for handling VLAN (Virtual Local Area Network) traffic. By configuring an interface to operate in Layer 2 mode, the switchport command enables the interface to manage data frames within a local network, facilitating efficient communication between devices.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb,ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="VLAN 1">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">VLAN 1 is the default VLAN that exists by default in the VLAN configuration.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="VLAN 1972">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">VLAN 1972 is an example of a VLAN that can be created and assigned a name, such as Marketing.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="PRIVILEGED EXEC MODE">
+      <data key="d0">MODE</data>
+      <data key="d1">Privileged EXEC mode is a command mode that allows users to execute commands that provide access to device configuration and status information.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="VLAN RANGE">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">VLAN range is an example of specifying multiple VLAN IDs for configuration, allowing for batch operations on VLANs.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="VLAN ID">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">VLAN ID is a unique identifier assigned to each VLAN, used for configuration and management purposes.</data>
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="VLAN CONFIGURATION MODE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </node>
+    <node id="INTERFACE VLAN 19">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">Interface VLAN 19 is a virtual interface used for VLAN configuration, allowing for Layer 2 communication within the VLAN.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="LAYER 2 MODE">
+      <data key="d0">MODE</data>
+      <data key="d1">Layer 2 mode allows an interface to handle Ethernet frames without IP routing, typically used for VLANs.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="LAYER 3 MODE">
+      <data key="d0">MODE</data>
+      <data key="d1">Layer 3 mode allows an interface to perform routing functions, enabling IP traffic handling.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="SWITCHPORT MODE">
+      <data key="d0">CLI</data>
+      <data key="d1">The "SWITCHPORT MODE" refers to a command used in networking to configure the VLAN membership mode of an interface on a switch. This command determines how the interface interacts with Virtual Local Area Networks (VLANs), allowing for the management of network traffic and segmentation.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb,dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="VLAN MAPPING">
+      <data key="d0">CLI</data>
+      <data key="d1">VLAN mapping is a configuration that allows for the mapping of customer VLANs to provider VLANs, facilitating traffic management between different networks.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="EXAMPLE 1">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">EXAMPLE 1 illustrates the process of configuring a port as a Layer 2 access port through the use of the switchport command. Additionally, EXAMPLE 1 specifies that VLANs 4010, 4012, and the range of VLANs from 4090 to 4094 are prohibited from being used as internal VLANs, which is enforced by the command: vlan prohibit-internal-usage add 4010,4012,4090-4094.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7,4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="EXAMPLE 2">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">"EXAMPLE 2" demonstrates the configuration of a port as a Layer 3 interface through the use of the no switchport command. Additionally, it specifies that all VLANs, with the exception of VLANs 4000-4107, are prohibited from being used as internal VLANs. This is achieved by employing the commands: vlan prohibit-internal-usage all and vlan prohibit-internal-usage remove 4000-4107.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7,4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="INTERFACE GI1/0/1">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">The entity "INTERFACE GI1/0/1" refers to a specific Ethernet interface on the switch, which can be configured for either Layer 2 or Layer 3 operation. This interface is currently being configured, highlighting its role in network connectivity and management.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb,525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="NO SWITCHPORT">
+      <data key="d0">CLI</data>
+      <data key="d1">The no switchport command is used to revert an interface from Layer 2 mode to Layer 3 mode, allowing for IP routing.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="SWITCHPORT MODE ACCESS">
+      <data key="d0">CLI</data>
+      <data key="d1">The "SWITCHPORT MODE ACCESS" command is utilized to configure a switch port to operate in access mode. This configuration allows the port to function as an untagged Layer 2 VLAN port, enabling it to connect to a single VLAN.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb,525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT MODE TRUNK">
+      <data key="d0">CLI</data>
+      <data key="d1">The "SWITCHPORT MODE TRUNK" command is used to configure a switch port to operate in trunk mode. This configuration enables the port to carry traffic for multiple VLANs, allowing it to handle tagged VLAN frames. By setting a port to trunk mode, it facilitates the transmission of data across different VLANs, enhancing network efficiency and segmentation.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb,525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT MODE GENERAL">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport mode general command configures a port to support both tagged and untagged traffic for VLANs.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="SWITCHPORT MODE PRIVATE-VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport mode private-vlan command configures a port to operate in a private VLAN environment, allowing for specific traffic management.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="SWITCHPORT MODE CUSTOMER">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport mode customer command configures an edge port connected to customer equipment, enabling VLAN tunneling.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="SWITCHPORT MODE VLAN-MAPPING">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport mode vlan-mapping command configures a port to perform VLAN mapping between customer and provider VLANs.</data>
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </node>
+    <node id="SWITCHXXXXXX">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">4e6763aa4686fe91bf94e5f08f7b40fb,525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="LACP">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">LACP (Link Aggregation Control Protocol) is a protocol used to combine multiple network interfaces into a single logical interface for increased bandwidth and redundancy.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="LLDP">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">LLDP (Link Layer Discovery Protocol) is a network protocol used for discovering devices on a local area network.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="UDLD">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">UDLD (Unidirectional Link Detection) is a protocol that detects unidirectional links and prevents data loss in network connections.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="CDP">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">CDP (Cisco Discovery Protocol) is a proprietary protocol used by Cisco devices to share information about themselves with other directly connected Cisco devices.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT ACCESS VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport access vlan command is used to assign a VLAN to an access port on a switch, allowing it to become a member of that VLAN.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT TRUNK ALLOWED VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport trunk allowed vlan command is used to specify which VLANs are allowed on a trunk port, controlling VLAN membership.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT TRUNK NATIVE VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport trunk native vlan command is used to define the native VLAN for a trunk interface, which is used for untagged packets.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT MODE PRIVATE-VLAN HOST">
+      <data key="d0">MODE</data>
+      <data key="d1">The switchport mode private-vlan host command configures a switch port to operate in private VLAN host mode, isolating it from other ports in the same VLAN.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT GENERAL ALLOWED VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The "SWITCHPORT GENERAL ALLOWED VLAN" command is utilized to configure the VLANs that are permitted on a general port of a network switch. This command specifies whether the packets transmitted through the port are tagged or untagged. It functions similarly to the configuration for trunk ports but offers additional capabilities tailored for general ports. By using the switchport general allowed vlan command, network administrators can effectively manage VLAN membership for these general ports, ensuring proper traffic segregation and management within the network.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14,525424c9622e657d133a01741e8bef5a</data>
+      <data key="d3">CLI</data>
+    </node>
+    <node id="INTERFACE GI1/0/2">
+      <data key="d0">CLI</data>
+      <data key="d1">The interface gi1/0/2 refers to another specific Ethernet interface on the switch that is being configured.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="INTERFACE RANGE GI1/0/1-3">
+      <data key="d0">CLI</data>
+      <data key="d1">The interface range gi1/0/1-3 command allows configuration of multiple interfaces (gi1/0/1 to gi1/0/3) simultaneously.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT ACCESS VLAN {VLAN-ID | NONE}">
+      <data key="d0">CLI</data>
+      <data key="d1">The command syntax for switchport access vlan specifies the VLAN to which the port is configured or removes it from any VLAN.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT TRUNK ALLOWED VLAN {ALL | NONE | VLAN-LIST | ADD VLAN-LIST | REMOVE VLAN-LIST | EXCEPT VLAN-LIST}">
+      <data key="d0">CLI</data>
+      <data key="d1">The command syntax for switchport trunk allowed vlan specifies which VLANs are allowed on a trunk port.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="SWITCHPORT TRUNK NATIVE VLAN {VLAN-ID | NONE}">
+      <data key="d0">CLI</data>
+      <data key="d1">The command syntax for switchport trunk native vlan defines the native VLAN for a trunk interface.</data>
+      <data key="d2">525424c9622e657d133a01741e8bef5a</data>
+    </node>
+    <node id="VID">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">VID is a configuration parameter that specifies the VLAN ID for a network interface, determining its membership in a VLAN.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="NATIVE VLAN">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">The Native VLAN is the VLAN that untagged traffic is associated with when an interface is configured as a trunk.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="TRUNK">
+      <data key="d0">MODE</data>
+      <data key="d1">Trunk mode allows a network interface to carry traffic for multiple VLANs, tagging packets to identify their VLAN membership.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="GENERAL">
+      <data key="d0">MODE</data>
+      <data key="d1">General mode allows a network interface to handle both tagged and untagged packets, providing flexibility in VLAN configurations.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL PVID">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport general pvid command sets the Port VLAN ID (PVID) for a general port, determining the default VLAN for untagged packets.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL INGRESS-FILTERING DISABLE">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport general ingress-filtering disable command disables ingress filtering on a general port, allowing all packets to pass through.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL ACCEPTABLE-FRAME-TYPE">
+      <data key="d0">CLI</data>
+      <data key="d1">The "SWITCHPORT GENERAL ACCEPTABLE-FRAME-TYPE" command is used to configure the types of packets that are accepted on a general port within a network switch. This command allows for the filtering of both tagged and untagged packets, providing network administrators with the ability to control the types of frames that can be processed on a port set to General Mode. By specifying the acceptable frame types, the command enhances network management and security by ensuring that only designated packet types are allowed through the port.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14,dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="SWITCHPORT GENERAL FORBIDDEN VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The "SWITCHPORT GENERAL FORBIDDEN VLAN" command is utilized to define specific VLANs that are prohibited from being added or removed on a port operating in General Mode. This command effectively prevents the inclusion or exclusion of designated VLANs, ensuring that only permitted VLANs can be managed on that port. By specifying which VLANs are forbidden, network administrators can maintain tighter control over the network configuration and enhance security by restricting access to certain VLANs.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14,dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="SWITCHPORT GENERAL ALLOWED VLAN ADD">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">The example command adds VLANs 2 and 3 as tagged to a general port, allowing those VLANs to transmit packets.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL PVID EXAMPLE">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">The example sets the PVID of port gi1/0/2 to 234, determining the default VLAN for untagged packets on that port.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL INGRESS-FILTERING DISABLE EXAMPLE">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">The example disables ingress filtering on port gi1/0/1, allowing all packets to be accepted regardless of their VLAN tagging.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL ALLOWED VLAN ADD EXAMPLE">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">The example adds VLANs 2-3 as tagged and VLAN 100 as untagged to port gi1/0/4, demonstrating how to configure VLAN membership on a general port.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL FORBIDDEN VLAN EXAMPLE">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">The example illustrates the use of the switchport general forbidden vlan command, showing how to restrict certain VLANs from being added to a general port.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL ACCEPTABLE-FRAME-TYPE EXAMPLE">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">The example configures port gi1/0/3 to discard untagged frames at ingress, demonstrating the application of the switchport general acceptable-frame-type command.</data>
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="SWITCHPORT GENERAL ALLOWED VLAN REMOVE">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">4db4e4460a2dd70d9b15934a34928a14</data>
+    </node>
+    <node id="INTERFACE CONFIGURATION MODE">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">Interface Configuration Mode is a mode used to configure Ethernet and Port Channel interfaces on a switch, allowing for specific settings related to VLANs and port behavior.</data>
+      <data key="d2">dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="GENERAL MODE">
+      <data key="d0">MODE</data>
+      <data key="d1">General Mode is a switchport mode that allows for the configuration of VLANs and frame types, enabling the port to handle both tagged and untagged frames.</data>
+      <data key="d2">dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="SWITCHPORT CUSTOMER VLAN">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport customer vlan command is used to set the VLAN for a port when it is in Customer Mode, allowing for custom VLAN arrangements across a provider network.</data>
+      <data key="d2">dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="SHOW INTERFACES SWITCHPORT">
+      <data key="d0">CLI</data>
+      <data key="d1">The show interfaces switchport command displays the administrative and operational status of all interfaces or a specific interface, providing detailed information about VLAN configurations and port modes.</data>
+      <data key="d2">dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="VLAN PROHIBIT INTERNAL USAGE">
+      <data key="d0">CLI</data>
+      <data key="d1">The vlan prohibit-internal-usage command is used in Global Configuration Mode to specify VLANs that cannot be used by the switch as internal VLANs.</data>
+      <data key="d2">dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="SWITCHPORT GENERAL INGRESS FILTERING">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport general ingress filtering command enables or disables filtering of incoming frames based on VLAN membership on a port configured in General Mode.</data>
+      <data key="d2">dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="SWITCHPORT GENERAL EGRESS TAGGED VLANS">
+      <data key="d0">CLI</data>
+      <data key="d1">The switchport general egress tagged VLANs command specifies which VLANs are tagged when frames are sent out of a port configured in General Mode.</data>
+      <data key="d2">dbbb5416de27960576bde1bddd4f71ac</data>
+    </node>
+    <node id="VLAN PROHIBIT-INTERNAL-USAGE">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">The vlan prohibit-internal-usage command is used to specify VLANs that cannot be used by the switch as internal VLANs, with options to add, remove, or specify exceptions for VLANs.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </node>
+    <node id="SHOW VLAN INTERNAL USAGE">
+      <data key="d0">CLI</data>
+      <data key="d1">The show vlan internal usage command is used in Privileged EXEC mode to display a list of VLANs used internally by the device.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </node>
+    <node id="EXAMPLE 3">
+      <data key="d0">EXAMPLE</data>
+      <data key="d1">Example 3 specifies that all VLANs except 4000-4107 cannot be used as internal VLANs using the command: vlan prohibit-internal-usage 4000-4107.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </node>
+    <node id="PROTOCOL 2">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">Protocol 2 is a configuration setting that is likely related to network protocols, with a specific identifier of 2 and a value of 72.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </node>
+    <node id="SUBNET 1">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">Subnet 1 is a configuration setting that is likely related to network subnets, with a specific identifier of 1 and a value of 15.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </node>
+    <node id="MAC 1">
+      <data key="d0">CONFIGURATION</data>
+      <data key="d1">MAC 1 is a configuration setting that is likely related to MAC addresses, with a specific identifier of 1 and a value of 77.</data>
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </node>
+    <node id="PROTOCOL 1">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </node>
+    <edge source="VLAN DATABASE" target="GLOBAL CONFIGURATION MODE">
+      <data key="d4">8.0</data>
+      <data key="d5">The vlan database command is used to enter Global Configuration mode for VLAN configuration.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="VLAN DATABASE" target="VLAN 1">
+      <data key="d4">5.0</data>
+      <data key="d5">VLAN 1 is the default VLAN that exists when entering VLAN Database Configuration mode.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="VLAN DATABASE" target="VLAN CONFIGURATION MODE">
+      <data key="d4">8.0</data>
+      <data key="d5">The vlan database command transitions the user into VLAN Configuration mode for VLAN management.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="GLOBAL CONFIGURATION MODE" target="VLAN">
+      <data key="d4">7.0</data>
+      <data key="d5">Global Configuration mode allows the use of the VLAN command to create and manage VLANs.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="GLOBAL CONFIGURATION MODE" target="INTERFACE VLAN">
+      <data key="d4">8.0</data>
+      <data key="d5">The interface vlan command is executed in Global Configuration mode to configure a specific VLAN.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="GLOBAL CONFIGURATION MODE" target="INTERFACE RANGE VLAN">
+      <data key="d4">8.0</data>
+      <data key="d5">The interface range vlan command is executed in Global Configuration mode to configure multiple VLANs.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="GLOBAL CONFIGURATION MODE" target="VLAN CONFIGURATION MODE">
+      <data key="d4">7.0</data>
+      <data key="d5">Global Configuration mode encompasses VLAN Configuration mode as a subset for VLAN management.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="GLOBAL CONFIGURATION MODE" target="VLAN PROHIBIT-INTERNAL-USAGE">
+      <data key="d4">8.0</data>
+      <data key="d5">The vlan prohibit-internal-usage command is executed in Global Configuration mode to configure VLAN settings.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+    <edge source="GLOBAL CONFIGURATION MODE" target="SHOW VLAN INTERNAL USAGE">
+      <data key="d4">5.0</data>
+      <data key="d5">The show vlan internal usage command is executed in Privileged EXEC mode, which is a different command mode from Global Configuration mode.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+    <edge source="VLAN" target="SHOW VLAN">
+      <data key="d4">6.0</data>
+      <data key="d5">The VLAN command can be used to create VLANs, while the show vlan command displays information about those VLANs.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="SHOW VLAN" target="PRIVILEGED EXEC MODE">
+      <data key="d4">8.0</data>
+      <data key="d5">The show vlan command is executed in Privileged EXEC mode to display VLAN information.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="INTERFACE VLAN" target="NAME">
+      <data key="d4">7.0</data>
+      <data key="d5">The name command is used within Interface VLAN Configuration mode to assign a name to a VLAN.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="INTERFACE VLAN" target="SWITCHPORT">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport command is used in Interface Configuration mode to change the mode of an interface related to VLANs.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="INTERFACE VLAN" target="VLAN 1972">
+      <data key="d4">1.0</data>
+      <data key="d5">VLAN 1972 can be configured using the interface vlan command in Interface Configuration mode.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="INTERFACE VLAN" target="VLAN ID">
+      <data key="d4">1.0</data>
+      <data key="d5">The interface vlan command requires a VLAN ID to specify which VLAN is being configured.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="INTERFACE RANGE VLAN" target="VLAN RANGE">
+      <data key="d4">7.0</data>
+      <data key="d5">The interface range vlan command allows for configuration of a specified VLAN range, facilitating batch operations.</data>
+      <data key="d6">ea9f7a49efe83da95fb8b9707cb31a9c</data>
+    </edge>
+    <edge source="SWITCHPORT" target="INTERFACE VLAN 19">
+      <data key="d4">7.0</data>
+      <data key="d5">The switchport command is used to configure the interface VLAN 19 to operate in Layer 2 mode.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="SWITCHPORT MODE">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport mode command is a specific application of the switchport command to set VLAN membership.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="LAYER 2 MODE">
+      <data key="d4">8.0</data>
+      <data key="d5">Switchport operates in Layer 2 mode to handle VLAN traffic effectively.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="LAYER 3 MODE">
+      <data key="d4">8.0</data>
+      <data key="d5">The no switchport command transitions the interface from Layer 2 mode to Layer 3 mode, allowing for routing capabilities.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="VLAN MAPPING">
+      <data key="d4">5.0</data>
+      <data key="d5">VLAN mapping is a specific configuration that can be applied to switchports to manage VLAN traffic between customer and provider networks.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="EXAMPLE 1">
+      <data key="d4">6.0</data>
+      <data key="d5">Example 1 shows the practical application of the switchport command to configure a port as an access port.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="EXAMPLE 2">
+      <data key="d4">1.0</data>
+      <data key="d5">Example 2 illustrates the use of the no switchport command to change the port's mode to Layer 3.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="NO SWITCHPORT">
+      <data key="d4">8.0</data>
+      <data key="d5">The no switchport command is directly related to the switchport command as it modifies the port's operational mode.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="SWITCHPORT MODE ACCESS">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport mode access command is a specific application of the switchport command to set a port as an access port.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="SWITCHPORT MODE TRUNK">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport mode trunk command is a specific application of the switchport command to set a port as a trunk port.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="SWITCHPORT MODE GENERAL">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport mode general command is a specific application of the switchport command to configure a port for general VLAN support.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="SWITCHPORT MODE PRIVATE-VLAN">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport mode private-vlan command is a specific application of the switchport command for private VLAN configurations.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="SWITCHPORT MODE CUSTOMER">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport mode customer command is a specific application of the switchport command for customer edge port configurations.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT" target="SWITCHPORT MODE VLAN-MAPPING">
+      <data key="d4">1.0</data>
+      <data key="d5">The switchport mode vlan-mapping command is a specific application of the switchport command for VLAN mapping configurations.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb</data>
+    </edge>
+    <edge source="SWITCHPORT MODE" target="GENERAL MODE">
+      <data key="d4">7.0</data>
+      <data key="d5">The switchport mode command is used to set the operational mode of a port, which can include General Mode as one of its configurations</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="EXAMPLE 1" target="VLAN PROHIBIT-INTERNAL-USAGE">
+      <data key="d4">7.0</data>
+      <data key="d5">Example 1 demonstrates the usage of the vlan prohibit-internal-usage command to restrict certain VLANs from being used internally.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+    <edge source="EXAMPLE 2" target="VLAN PROHIBIT-INTERNAL-USAGE">
+      <data key="d4">7.0</data>
+      <data key="d5">Example 2 demonstrates the usage of the vlan prohibit-internal-usage command to restrict all VLANs except a specified range from being used internally.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+    <edge source="INTERFACE GI1/0/1" target="SWITCHXXXXXX">
+      <data key="d4">14.0</data>
+      <data key="d5">The INTERFACE GI1/0/1 is a configuration example utilized within the context of the SWITCHXXXXXX device. The SWITCHXXXXXX command is specifically employed to configure the INTERFACE GI1/0/1 on the switch, indicating its role in the overall setup and management of the device's networking capabilities.</data>
+      <data key="d6">4e6763aa4686fe91bf94e5f08f7b40fb,525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="INTERFACE GI1/0/1" target="SWITCHPORT ACCESS VLAN {VLAN-ID | NONE}">
+      <data key="d4">8.0</data>
+      <data key="d5">The interface gi1/0/1 is configured with the switchport access vlan command to assign it to a specific VLAN</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="SWITCHPORT MODE ACCESS" target="SWITCHPORT ACCESS VLAN">
+      <data key="d4">8.0</data>
+      <data key="d5">The switchport access vlan command is used in conjunction with the switchport mode access command to assign a VLAN to an access port</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="SWITCHPORT MODE TRUNK" target="SWITCHPORT TRUNK ALLOWED VLAN">
+      <data key="d4">8.0</data>
+      <data key="d5">The switchport trunk allowed vlan command is used in conjunction with the switchport mode trunk command to specify allowed VLANs on a trunk port</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="SWITCHPORT MODE TRUNK" target="SWITCHPORT TRUNK NATIVE VLAN">
+      <data key="d4">8.0</data>
+      <data key="d5">The switchport trunk native vlan command is used in conjunction with the switchport mode trunk command to define the native VLAN for a trunk interface</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="SWITCHPORT MODE TRUNK" target="SWITCHPORT GENERAL ALLOWED VLAN">
+      <data key="d4">1.0</data>
+      <data key="d5">The switchport general allowed vlan command is related to trunk configurations as it specifies VLAN membership for general ports</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="SWITCHXXXXXX" target="INTERFACE GI1/0/2">
+      <data key="d4">7.0</data>
+      <data key="d5">The switchxxxxxx command is used to configure the interface gi1/0/2 on the switch</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="SWITCHPORT TRUNK NATIVE VLAN" target="SWITCHPORT MODE PRIVATE-VLAN HOST">
+      <data key="d4">4.0</data>
+      <data key="d5">The switchport mode private-vlan host command can be related to trunk configurations as it defines how a port interacts with VLANs</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="SWITCHPORT MODE PRIVATE-VLAN HOST" target="INTERFACE GI1/0/2">
+      <data key="d4">8.0</data>
+      <data key="d5">The interface gi1/0/2 is configured to operate in private-vlan host mode using the switchport mode command</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL ALLOWED VLAN" target="TRUNK">
+      <data key="d4">8.0</data>
+      <data key="d5">Trunk mode is necessary for the switchport general allowed vlan command to function, as it defines how VLANs are handled on the port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL ALLOWED VLAN" target="GENERAL">
+      <data key="d4">8.0</data>
+      <data key="d5">General mode allows the switchport general allowed vlan command to specify which VLANs can be transmitted on the port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL ALLOWED VLAN" target="SWITCHPORT GENERAL PVID">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport general allowed vlan command works in conjunction with the switchport general pvid command to manage VLAN traffic on a general port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="INTERFACE RANGE GI1/0/1-3" target="SWITCHPORT TRUNK ALLOWED VLAN {ALL | NONE | VLAN-LIST | ADD VLAN-LIST | REMOVE VLAN-LIST | EXCEPT VLAN-LIST}">
+      <data key="d4">1.0</data>
+      <data key="d5">The interface range command allows for bulk configuration of allowed VLANs on multiple interfaces</data>
+      <data key="d6">525424c9622e657d133a01741e8bef5a</data>
+    </edge>
+    <edge source="VID" target="NATIVE VLAN">
+      <data key="d4">7.0</data>
+      <data key="d5">The VID is set to the Native VLAN ID when the interface is configured as a trunk, indicating its role in VLAN tagging.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL PVID" target="SWITCHPORT GENERAL PVID EXAMPLE">
+      <data key="d4">9.0</data>
+      <data key="d5">The example illustrates the application of the switchport general pvid command, showing how to set the PVID for a specific port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL INGRESS-FILTERING DISABLE" target="SWITCHPORT GENERAL ACCEPTABLE-FRAME-TYPE">
+      <data key="d4">5.0</data>
+      <data key="d5">Disabling ingress filtering affects how the switchport general acceptable-frame-type command operates, as it determines which packets are accepted.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL INGRESS-FILTERING DISABLE" target="SWITCHPORT GENERAL INGRESS-FILTERING DISABLE EXAMPLE">
+      <data key="d4">1.0</data>
+      <data key="d5">The example demonstrates the use of the switchport general ingress-filtering disable command, showing its practical application on a port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL ACCEPTABLE-FRAME-TYPE" target="SWITCHPORT GENERAL ACCEPTABLE-FRAME-TYPE EXAMPLE">
+      <data key="d4">1.0</data>
+      <data key="d5">The example illustrates the application of the switchport general acceptable-frame-type command, showing how to filter packet types on a port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL ACCEPTABLE-FRAME-TYPE" target="GENERAL MODE">
+      <data key="d4">8.0</data>
+      <data key="d5">The switchport general acceptable-frame-type command is relevant in General Mode, as it defines the acceptable frame types for that mode</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL FORBIDDEN VLAN" target="SWITCHPORT GENERAL FORBIDDEN VLAN EXAMPLE">
+      <data key="d4">9.0</data>
+      <data key="d5">The example demonstrates the use of the switchport general forbidden vlan command, showing how to restrict VLANs on a general port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL FORBIDDEN VLAN" target="GENERAL MODE">
+      <data key="d4">9.0</data>
+      <data key="d5">The switchport general forbidden vlan command is applicable when the port is in General Mode, as it defines which VLANs are forbiddenThe switchport general forbidden VLAN command is used in General Mode to restrict certain VLANs from being added to the port</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL ALLOWED VLAN ADD" target="SWITCHPORT GENERAL ALLOWED VLAN REMOVE">
+      <data key="d4">7.0</data>
+      <data key="d5">The switchport general allowed vlan add command and the switchport general allowed vlan remove command are related as they both manage VLAN membership on a general port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="SWITCHPORT GENERAL ALLOWED VLAN ADD" target="SWITCHPORT GENERAL ALLOWED VLAN ADD EXAMPLE">
+      <data key="d4">9.0</data>
+      <data key="d5">The example illustrates the practical application of the switchport general allowed vlan add command, showing how to configure VLANs on a port.</data>
+      <data key="d6">4db4e4460a2dd70d9b15934a34928a14</data>
+    </edge>
+    <edge source="INTERFACE CONFIGURATION MODE" target="GENERAL MODE">
+      <data key="d4">7.0</data>
+      <data key="d5">General Mode is a specific configuration within the broader Interface Configuration Mode, allowing for detailed VLAN settings on a port</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="INTERFACE CONFIGURATION MODE" target="SHOW INTERFACES SWITCHPORT">
+      <data key="d4">5.0</data>
+      <data key="d5">The show interfaces switchport command is executed in Privileged EXEC mode, which provides information about the configurations set in Interface Configuration Mode</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="INTERFACE CONFIGURATION MODE" target="VLAN PROHIBIT INTERNAL USAGE">
+      <data key="d4">1.0</data>
+      <data key="d5">The vlan prohibit-internal-usage command is part of the Global Configuration Mode, which is a higher-level configuration that can affect settings in Interface Configuration Mode</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="GENERAL MODE" target="SWITCHPORT CUSTOMER VLAN">
+      <data key="d4">6.0</data>
+      <data key="d5">The switchport customer vlan command is used when the port is in Customer Mode, which is a specific configuration that can be set in the General Mode context</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="GENERAL MODE" target="SWITCHPORT GENERAL INGRESS FILTERING">
+      <data key="d4">8.0</data>
+      <data key="d5">The switchport general ingress filtering command is applicable in General Mode, controlling how incoming frames are processed based on VLAN membership</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="GENERAL MODE" target="SWITCHPORT GENERAL EGRESS TAGGED VLANS">
+      <data key="d4">8.0</data>
+      <data key="d5">The switchport general egress tagged VLANs command is used in General Mode to specify which VLANs will be tagged on egress traffic</data>
+      <data key="d6">dbbb5416de27960576bde1bddd4f71ac</data>
+    </edge>
+    <edge source="VLAN PROHIBIT-INTERNAL-USAGE" target="EXAMPLE 3">
+      <data key="d4">1.0</data>
+      <data key="d5">Example 3 demonstrates the usage of the vlan prohibit-internal-usage command to restrict all VLANs except a specified range from being used internally.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+    <edge source="VLAN PROHIBIT-INTERNAL-USAGE" target="PROTOCOL 1">
+      <data key="d4">4.0</data>
+      <data key="d5">Protocol 1 may be related to the configuration of VLANs, indicating a specific setting for network protocols.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+    <edge source="VLAN PROHIBIT-INTERNAL-USAGE" target="PROTOCOL 2">
+      <data key="d4">4.0</data>
+      <data key="d5">Protocol 2 may be related to the configuration of VLANs, indicating a specific setting for network protocols.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+    <edge source="VLAN PROHIBIT-INTERNAL-USAGE" target="SUBNET 1">
+      <data key="d4">4.0</data>
+      <data key="d5">Subnet 1 may be related to the configuration of VLANs, indicating a specific setting for network subnets.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+    <edge source="VLAN PROHIBIT-INTERNAL-USAGE" target="MAC 1">
+      <data key="d4">1.0</data>
+      <data key="d5">MAC 1 may be related to the configuration of VLANs, indicating a specific setting for MAC addresses.</data>
+      <data key="d6">1fcbf1c32b94cf23cc8933a5373a9ed7</data>
+    </edge>
+  </graph>
+</graphml>
