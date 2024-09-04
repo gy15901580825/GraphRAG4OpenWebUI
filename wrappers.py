@@ -7,7 +7,6 @@ from playhouse.db_url import connect, parse
 from playhouse.shortcuts import ReconnectMixin
 
 log = logging.getLogger(__name__)
-log.setLevel("DB")
 
 db_state_default = {"closed": None, "conn": None, "ctx": None, "transactions": None}
 db_state = ContextVar("db_state", default=db_state_default.copy())
