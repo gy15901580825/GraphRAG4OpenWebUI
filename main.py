@@ -570,60 +570,61 @@ def upload_file(file: UploadFile = File(...)):
         )
 
 
-@app.post("/v1/process/doc")
-def process_doc(
-    form_data: ProcessDocForm,
-    user=Depends(get_verified_user),
-):
-    try:
-        file = Files.get_file_by_id(form_data.file_id)
-        file_path = file.meta.get("path", f"{UPLOAD_DIR}/{file.filename}")
+# @app.post("/v1/process/doc")
+# def process_doc(
+#     form_data: ProcessDocForm,
+#     user=Depends(get_verified_user),
+# ):
+#     try:
+#         file = Files.get_file_by_id(form_data.file_id)
+#         file_path = file.meta.get("path", f"{UPLOAD_DIR}/{file.filename}")
 
-        f = open(file_path, "rb")
+#         f = open(file_path, "rb")
 
-        collection_name = form_data.collection_name
-        if collection_name is None:
-            collection_name = calculate_sha256(f)[:63]
-        f.close()
+#         collection_name = form_data.collection_name
+#         if collection_name is None:
+#             collection_name = calculate_sha256(f)[:63]
+#         f.close()
 
-        loader, known_type = get_loader(
-            file.filename, file.meta.get("content_type"), file_path
-        )
-        data = loader.load()
+#         loader, known_type = get_loader(
+#             file.filename, file.meta.get("content_type"), file_path
+#         )
+#         data = loader.load()
 
-        try:
-            result = store_data_in_vector_db(
-                data,
-                collection_name,
-                {
-                    "file_id": form_data.file_id,
-                    "name": file.meta.get("name", file.filename),
-                },
-            )
+#         try:
+#             result = store_data_in_vector_db(
+#                 data,
+#                 collection_name,
+#                 {
+#                     "file_id": form_data.file_id,
+#                     "name": file.meta.get("name", file.filename),
+#                 },
+#             )
 
-            if result:
-                return {
-                    "status": True,
-                    "collection_name": collection_name,
-                    "known_type": known_type,
-                    "filename": file.meta.get("name", file.filename),
-                }
-        except Exception as e:
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail=e,
-            )
-    except Exception as e:
-        log.exception(e)
-        if "No pandoc was found" in str(e):
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail=ERROR_MESSAGES.PANDOC_NOT_INSTALLED,
-            )
-        else:
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail=ERROR_MESSAGES.DEFAULT(e),
+#             if result:
+#                 return {
+#                     "status": True,
+#                     "collection_name": collection_name,
+#                     "known_type": known_type,
+#                     "filename": file.meta.get("name", file.filename),
+#                 }
+#         except Exception as e:
+#             raise HTTPException(
+#                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+#                 detail=e,
+#             )
+#     except Exception as e:
+#         log.exception(e)
+#         if "No pandoc was found" in str(e):
+#             raise HTTPException(
+#                 status_code=status.HTTP_400_BAD_REQUEST,
+#                 detail=ERROR_MESSAGES.PANDOC_NOT_INSTALLED,
+#             )
+#         else:
+#             raise HTTPException(
+#                 status_code=status.HTTP_400_BAD_REQUEST,
+#                 detail=ERROR_MESSAGES.DEFAULT(e),
+#             )
 
 
 ############################
