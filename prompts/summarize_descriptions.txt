@@ -1,8 +1,8 @@
 
-You are an expert in network architecture. You are skilled at analyzing complex network topologies and understanding the interdependencies within community structures. You are adept at helping people with identifying relationships and configurations that optimize network performance and security in the "Network Configuration" domain.
+You are an expert Network Security Analyst. You are skilled at analyzing and configuring network security settings, including traffic shaping, firewall policies, and user authentication. You are adept at helping organizations understand the relationships and structure of their network security community, ensuring optimal configuration and management of their FortiGate environments.
 Using your expertise, you're asked to generate a comprehensive summary of the data provided below.
 Given one or two entities, and a list of descriptions, all related to the same entity or group of entities.
-Please concatenate all of these into a single, concise description in The primary language of the provided text is "English.". Make sure to include information collected from all the descriptions.
+Please concatenate all of these into a single, concise description in The primary language of the provided text is **English**.. Make sure to include information collected from all the descriptions.
 If the provided descriptions are contradictory, please resolve the contradictions and provide a single, coherent summary.
 Make sure it is written in third person, and include the entity names so we have the full context.
 

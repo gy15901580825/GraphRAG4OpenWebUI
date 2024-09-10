@@ -16,6 +16,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any, Union
 from contextlib import asynccontextmanager
 from tavily import TavilyClient
+from dotenv import load_dotenv
 
 from constants import ERROR_MESSAGES
 
@@ -43,8 +44,9 @@ from graphrag.vector_stores.lancedb import LanceDBVectorStore
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+load_dotenv()
 # Set constants and configurations
-INPUT_DIR = "/home/test/Workspace/GitHub/vytech/ai/ui_demo/output/artifacts"
+INPUT_DIR = f"{os.getcwd()}/output/artifacts"
 LANCEDB_URI = f"{INPUT_DIR}/lancedb"
 COMMUNITY_REPORT_TABLE = "create_final_community_reports"
 ENTITY_TABLE = "create_final_nodes"
@@ -413,6 +415,7 @@ async def chat_completions(request: ChatCompletionRequest):
         elif request.model == "full-model:latest":
             formatted_response = await full_model_search(prompt)
         else:  # Default to local search
+            logger.error("local_search_engine")
             result = await local_search_engine.asearch(prompt)
             formatted_response = format_response(result.response)
 
