@@ -120,7 +120,7 @@ async def setup_llm_and_embedder():
 
     # Get model names
     llm_model = os.environ.get("GRAPHRAG_LLM_MODEL", "gpt-4o-mini")
-    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-small")
+    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-large")
 
     # Check if API key exists
     if api_key == "YOUR_API_KEY":

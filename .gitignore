@@ -8,6 +8,8 @@ docsite/*/build/
 .swc/
 dist/
 .idea
+cache/
+
 # https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
 docsite/.yarn/*
 !docsite/.yarn/patches

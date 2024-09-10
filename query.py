@@ -25,7 +25,7 @@ from graphrag.query.structured_search.local_search.search import LocalSearch
 from graphrag.vector_stores.lancedb import LanceDBVectorStore
 
 # 设置常量和配置
-INPUT_DIR = "/home/test/Workspace/GitHub/vytech/ai/ui_demo/output/artifacts"
+INPUT_DIR = "/home/test/Disk/work/ui_demo/output/artifacts"
 LANCEDB_URI = f"{INPUT_DIR}/lancedb"
 COMMUNITY_REPORT_TABLE = "create_final_community_reports"
 ENTITY_TABLE = "create_final_nodes"
@@ -43,7 +43,7 @@ async def setup_llm_and_embedder():
     load_dotenv()
     api_key = os.environ.get("GRAPHRAG_API_KEY")
     llm_model = os.environ.get("GRAPHRAG_LLM_MODEL", "gpt-4o-mini")
-    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-small")
+    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-large")
 
     # 初始化ChatOpenAI实例
     llm = ChatOpenAI(
@@ -224,7 +224,7 @@ async def main():
         )
 
         question_history = [
-            "how to Configuring interface with vlan from the CLI?",
+            "how to Configuring a firewall policy from the CLI?",
         ]
         print("\n[bold]Generating questions based on history:[/bold]")
         print(f"History: {question_history}")
