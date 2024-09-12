@@ -120,13 +120,12 @@ async def setup_llm_and_embedder():
 
     # Get model names
     llm_model = os.environ.get("GRAPHRAG_LLM_MODEL", "gpt-4o-mini")
-    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-large")
+    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-small")
 
     # Check if API key exists
     if api_key == "YOUR_API_KEY":
         logger.error("Valid GRAPHRAG_API_KEY not found in environment variables")
         raise ValueError("GRAPHRAG_API_KEY is not set correctly")
-
     # Initialize ChatOpenAI instance
     llm = ChatOpenAI(
         api_key=api_key,

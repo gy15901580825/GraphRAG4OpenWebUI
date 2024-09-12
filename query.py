@@ -43,7 +43,7 @@ async def setup_llm_and_embedder():
     load_dotenv()
     api_key = os.environ.get("GRAPHRAG_API_KEY")
     llm_model = os.environ.get("GRAPHRAG_LLM_MODEL", "gpt-4o-mini")
-    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-large")
+    embedding_model = os.environ.get("GRAPHRAG_EMBEDDING_MODEL", "text-embedding-3-small")
 
     # 初始化ChatOpenAI实例
     llm = ChatOpenAI(
